@@ -1,3 +1,23 @@
+@font-face {
+    font-family: "Plain Light";
+    src: url(./fonts/plain-regular-webfont.ttf);
+}
+
+@font-face {
+    font-family: "Plain Light";
+    src: url(./fonts/plain-light-webfont.ttf);
+}
+
+@font-face {
+    font-family: "silk serif";
+    src: url(./fonts/silkserif-regularitalic-webfont.ttf);
+}
+
+@font-face {
+    font-family: "silk serif";
+    src: url(./fonts/silkserif-lightitalic-webfont.ttf);
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -10,6 +30,18 @@ body,html{
     height: 100%;
     width: 100%;
 }
+
+#crsr{
+    height: 2.3vw;
+    width: 2.3vw;
+    border-radius: 50%;
+    /* background-color: #fff; */
+    border: 1px solid #fff;
+    position: fixed;
+    z-index: 999;
+    transform: translate(-50%,-50%);
+}
+  
 #loader{
     height: 100%;
     width: 100%;
@@ -101,7 +133,7 @@ body,html{
 #page1{
     height: 100vh;
     width:100%;
-    background-color: #e37474;
+    background-color: #1e1c1c;
     position: relative;
     z-index: 100;
 }
@@ -109,4 +141,72 @@ body,html{
 #line1-part1 h5{
     width: 5vw;
     text-align: right;
+}
+
+#page1 #nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.3vw 5.5vw;
+}
+
+#nav-part2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+}
+
+#nav-part2 h4{
+    font-size: 0.8vw;
+    font-weight: 500;
+     cursor: pointer;
+     position: relative;
+     display: inline-block;
+    /*transition: all 0.3s ease-in-out; */
+}
+
+/* .hero{
+    background-color: aqua;
+} */
+
+.hero{
+    width:75%;
+    margin-left: 27%;
+    height:fit-content;
+    overflow-y: hidden;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 9999;
+}
+
+.hero:nth-child(2){
+    margin-top: 8vw;
+}
+
+.hero h1{
+    font-size: 7vw;
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 7vw;
+    position: relative;
+    /* padding: 0vw 5vw; */
+    /* margin-top: 8vh;  */
+}
+
+.hero h2,.hero h3{
+    font-size: 7vw;
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 7vw;
+    position: relative;
+    /* padding: 0vw 5vw; */
+    /* margin-top: 8vh;  */
+}
+
+.hero h2:hover{
+    -webkit-text-stroke: 2px #fff;
+    color:transparent;
+    font-weight: 400;
 }
